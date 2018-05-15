@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        
+        <title>Pig Game</title>
+    </head>
+
+    <body>
+        <h2>PIG GAME 2</h2>
+        <form id="myForm" action="/action_page.php">
+            Player 1 Name: <input type="text" id='p1'><br><br>
+            Unlucky Number: <input type="text" id='p1u1'><br><br>
+            Player 2 Name: <input type="text" id = 'p2'><br><br>
+            Unlucky Number: <input type="text" id='p2u2'><br><br>
+            Winning Score:<input type="number" placeholder="Winning score" id = 'ws'>
+        </form><br>
+        <button type="button" class="button">Submit</button>
+        <h4 class = 'p1e'>Please enter the value between 1-6!</h4>
+        <h4 class = 'p2e'>Please enter the value between 1-6!</h4>
+        <div class="wrapper clearfix">
+            <div class="player-0-panel active">
+                <div class="player-name" id="name-0"></div>
+                <div class="player-score" id="score-0">43</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">0</div>
+                    <img src="dice-5.png" alt="Dice" class="dicep1">
+                </div>
+            </div>
+            
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1"></div>
+                <div class="player-score" id="score-1">72</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                    <img src="dice-5.png" alt="Dice" class="dicep2">
+                </div>
+            </div>
+            
+            <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+            <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+            <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+            <div class="winscore"></div>
+            
+            <img src="dice-5.png" alt="Dice" class="dice">
+            <audio id ='myaudio'><source src = 'dice_roll.mp3'></audio>
+            <audio id ='myaudio2'><source src = 'mario_lost_life.mp3'></audio>
+            <audio id ='myaudio3'><source src = 'super_mariop.mp3'></audio>
+            <audio id ='myaudio4'><source src = 'Ludo%20-%20ringtones.mp3'></audio>
+        </div>
+        
+        <script src="app.js"></script>
+    </body>
+</html>
